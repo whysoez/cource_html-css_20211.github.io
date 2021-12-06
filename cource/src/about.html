@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Giới thiệu</title>
     <style>
         table, th, td {
@@ -13,12 +13,18 @@
     </style>
 </head>
 <body>
-    <nav style="margin-left: 40px;">
-        <a href="./index.html">Trang chủ</a>
-        <a href="./product.html">Sản phẩm</a>
-        <a href="./about.html">Giới thiệu</a>
-        <a href="./contact.html">Liên hệ</a>
-    </nav>
+    <header class="top-head">
+        <a href="./index.html" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+        <nav class="nav-cen">
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./product.html">Sản phẩm</a></li>
+                <li><a href="./recruitment.html">Tuyển dụng</a></li>
+                <li><a href="./about.html">Giới thiệu</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html"><button>Liên Hệ</button></a>
+    </header>
     <h3>Thống kê số lượng sản phẩm bán ra trên ngày</h3>
     <table style="text-align:center">
         <tr>
@@ -38,5 +44,9 @@
         </tr>
     </table>
     <p style="font-size: 20px;"><b>Địa chỉ: </b>Cửa hàng bán đồ uống ở sảnh <b>B1</b> trường đại học mỏ địa chất</p>
+    <div style="height: 1000px;"></div>
+    <footer>
+        <p class="fot">-----------------ToCoMo Thương hiệu đồ uống số 2------------------</p>
+    </footer>
 </body>
 </html>

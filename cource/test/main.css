@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+}
+
+.pad {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+    margin: 20px auto;
+}
