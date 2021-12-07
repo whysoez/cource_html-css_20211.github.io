@@ -10,6 +10,7 @@
     transition: 0.5s linear;
 }
 
+
 .top-head {
     display: flex;
     align-items: center;
@@ -31,8 +32,19 @@
     display: inline;
     margin: auto 15px;
 }
+
 .nav-links li:hover {
-    opacity: 0.5;
+    text-decoration-line: underline;
+}
+
+.fa-search:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.fa-search {
+    margin-left: 10px;
 }
 
 a {
@@ -200,4 +212,4 @@ a {
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-    
+ 
