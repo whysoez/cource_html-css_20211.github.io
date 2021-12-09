@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&display=swap');
 
 * {
     padding: 0px;
@@ -77,16 +78,6 @@ a {
     background-size: cover;
 }
 
-.fot {
-    background-color: rgba(5, 5, 128, 0.582);
-    font-size: 1.5rem;
-    font-weight: 1000;
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-}
 
 .banner-content {
     margin: auto;
@@ -120,6 +111,7 @@ a {
 }
 
 .slogan2 {
+    font-family: 'Bungee', cursive;
     font-size: 2rem;
     font-weight: 700;
     color:white;
@@ -212,4 +204,128 @@ a {
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
- 
+
+.list-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.list-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-product1, .list-product2 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.title-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.product img:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    transition: 1s linear;
+}
+
+.product {
+    display: flex;
+    background-color: #f5f5f583;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 180px;
+    margin: 1%;
+    width: 20%;
+    border-bottom: 2px solid rgba(161, 145, 145, 0.267);
+    box-shadow: 0px 3px rgba(245, 230, 208, 0.5);
+}
+
+.title_1 {
+    font-family: 'Bungee', cursive;
+    color: rgb(250, 187, 93);
+}
+
+.title_2 {
+    font-weight: 1000;
+    margin: 10px 0px 40px;
+    font-size: 2rem;
+}
+
+.order button {
+    padding: 5px 15px;
+    color: white;
+    background-color: #d3b673;
+    border: 1px solid #d3b673;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.order button:hover {
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+}
+
+.product p {
+    margin: 15px 10px;
+    min-width: 100px;
+    color: rgba(0, 0, 0, 0.623);
+    font-weight: 1000;
+}
+
+.price_1 {
+    color: #8a7342;
+    font-size: 0.95rem;
+}
+
+.price_2 {
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.over-view {
+    margin: 30px 0px;
+    padding: 5px 20px;
+    background-color: #d3b673;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.726)), url(../img/home-product/footer.png);
+    background-size: cover;
+    color: #f3d387ea;
+}
+.fot {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
