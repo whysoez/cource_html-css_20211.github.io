@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
+/* Reset CSS để cho tất cả các trang website đều có kích thước giống nhau */
 * {
     padding: 0px;
     margin: 0px;
@@ -11,7 +12,7 @@
     box-sizing: border-box;
     transition: 0.5s linear;
 }
-
+/* CSS chung cho phần navigation trang chủ */
 .top-head {
     display: flex;
     align-items: center;
@@ -339,13 +340,7 @@ footer {
     font-weight: 700;
 }
 
-br {
-    display: block;
-    content: "";
-    margin: 0px;
-    padding: 0px;
-    font-size: 20%;
-}
+/* Css cho trang product */
 
 .order_page {
     display: flex;
@@ -374,4 +369,36 @@ br {
     height: 300px;
     width: 20%;
     box-shadow: 1px 1px 20px 2px rgba(139, 101, 101, 0.151);
+}
+
+.menu_name {
+    display:flex;
+    justify-content: space-between;
+    width: auto;
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+    align-items: center;
+    margin: 0px 10px;
+    color: #3a352a;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order_name_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+.order_current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
 }
