@@ -399,6 +399,29 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 50%;
+    text-align: ;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* height: 50%; */
+    position: relative;
+}
+
+.order_current a {
+    position: absolute;
+    bottom: 15px;
+    background-color: #d3b673;
+    margin: auto;
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+}
+
+.order_current_name {
+    position: absolute;
+    top: -200px;
+    background-color: #f3d387ea;
+}
+
+.book_current {
+    position: absolute;
+    top: -150px;
 }
