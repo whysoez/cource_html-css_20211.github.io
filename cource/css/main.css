@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 * {
     padding: 0px;
@@ -11,13 +12,12 @@
     transition: 0.5s linear;
 }
 
-
 .top-head {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 60px;
-    background-image: linear-gradient(180deg, rgb(218, 228, 131), rgb(87, 125, 207));
+    background-image: linear-gradient(45deg, rgb(204, 221, 50), rgb(212, 69, 69));
     position: sticky;
     top: 0px;
     font-weight: 1000;
@@ -111,11 +111,17 @@ a {
 }
 
 .slogan2 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
     font-size: 2rem;
-    font-weight: 700;
-    color:white;
-    margin-bottom: 30px;
+    color:#ffffff;
+    margin: 10px 0 40px;
+    /* letter-spacing: 3px; */
+    line-height: 1;
+}
+
+.slogan3, .slogan4 {
+    font-weight: 1000;
+    line-height: 1.5;
 }
 
 .burger {
@@ -211,6 +217,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-color: #fbfbfb;
 }
 
 .list-product {
@@ -257,16 +264,18 @@ a {
     min-width: 180px;
     margin: 1%;
     width: 20%;
-    border-bottom: 2px solid rgba(161, 145, 145, 0.267);
-    box-shadow: 0px 3px rgba(245, 230, 208, 0.5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px #bebebe;
 }
 
 .title_1 {
+    margin-top: 50px;
     font-family: 'Bungee', cursive;
-    color: rgb(250, 187, 93);
+    color: rgb(250, 181, 77);
 }
 
 .title_2 {
+    font-family: 'Baloo Bhaijaan 2', cursive;;
     font-weight: 1000;
     margin: 10px 0px 40px;
     font-size: 2rem;
@@ -328,4 +337,41 @@ footer {
     left: 0;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+br {
+    display: block;
+    content: "";
+    margin: 0px;
+    padding: 0px;
+    font-size: 20%;
+}
+
+.order_page {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu {
+    height: 300px;
+    width: 20%;
+    /* background-color: rgb(17, 16, 16); */
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px rgba(139, 101, 101, 0.151);
+}
+
+.list_current {
+    height: 400px;
+    width: 40%;
+    margin: 0 10px;
+    /* box-shadow: 10px 10px rgba(139, 101, 101, 0.151); */
+    background-color: black;
+}
+
+.book {
+    height: 300px;
+    width: 20%;
+    box-shadow: 1px 1px 20px 2px rgba(139, 101, 101, 0.151);
 }
