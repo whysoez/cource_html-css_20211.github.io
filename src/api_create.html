@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/movie.css">
     <title>Thêm api</title>
 </head>
 <body>
     <div>Thêm</div>
+
+    <!--lý do console.log và innerHTML liên tục load lại là
+    do onclick trong form nó sẽ thực hiện một action form ngay sau đó.
+    lý do fetch đã set method thành post rồi mà vẫn gửi method get là do
+    action mặc định của form là get mà button submit onclick lại ở trong form
+    cách giải quyết là cho nó ra bên ngoài
+    -->
     <form>
         <label for="name">Movie Name:</label><br>
-        <input type="text" id="name" name="name" value=""><br>
+        <input type="text" onfocusout="focusName()" id="name" name="name" value="" placeholder="Nhập tên phim"><br>
+        <p id="checkname" class="check"></p>
         <label for="genre">Genre:</label><br>
-        <input type="text" id="genre" name="genre" value=""><br><br>
+        <input type="text" onfocusout="focusGenre()" id="genre" name="genre" value="" placeholder="Nhập thể loại phim"><br>
+        <p id="checkgenre" class="check"></p>
         <label for="duration">Duration:</label><br>
-        <input type="text" id="duration" name="duration" value=""><br><br>
-        <label for="releaseDate">releaseDate:</label><br>
-        <input type="text" id="releaseDate" name="releaseDate" value=""><br><br>
-        <button id="create">Tạo</button>
+        <input type="text" onfocusout="focusDuration()" id="duration" name="duration" value="" placeholder="Thời lượng"><br>
+        <p id="checkduration" class="check"></p>
+        <label for="releaseDate">ReleaseDate:</label><br>
+        <input type="date" onfocusout="focusReleaseDate()" id="releaseDate" name="releaseDate" value="" placeholder="Ngày ra mắt"><br>
+        <p id="checkreleasedate" class="check"></p>
     </form>
-    <a href="./testapi.html"><button>Back Index</button></a>
+    <div class="valid">
+        <button id="create" onclick="start()">Tạo</button>
+        <a href="./testapi.html"><button>Back Index</button></a>
+        <p class="state"></p>
+    </div>
     <script src="../js/create.js"></script>
 </body>
 </html>

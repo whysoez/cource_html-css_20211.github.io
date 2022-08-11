@@ -35,4 +35,6 @@ function renderMovie(movies){
         `;
     });
     listmovie.outerHTML = htmls.join('');
+
+    // Phân trang slipt htmls và custom state create in movie
 }

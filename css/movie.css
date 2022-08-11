@@ -19,3 +19,7 @@ table {
   button:hover {
     cursor: pointer;
   }
+
+  .check, .state {
+    color: red;
+  }
