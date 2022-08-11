@@ -7,7 +7,7 @@ function start(){
 
 // start();
 
-var state = false;
+var state = 1;
 
 function create(){
     var name = document.querySelector('#name').value;
@@ -22,8 +22,10 @@ function create(){
         releaseDate: releaseDate
     };
 
+    test();
+
     var showSate = document.querySelector(".state");
-    if(state)
+    if(state != 4)
     {
         showSate.innerHTML = "Vui lòng kiểm tra lại thông tin.";
     }
@@ -63,6 +65,7 @@ function focusName() {
     }
     else {
         checkname.innerHTML = "";
+        state++;
     }
 }
 
@@ -75,6 +78,7 @@ function focusGenre() {
     }
     else {
         checkname.innerHTML = "";
+        state++;
     }
 }
 
@@ -87,6 +91,7 @@ function focusDuration() {
     }
     else {
         checkname.innerHTML = "";
+        state++;
     }
 }
 
@@ -99,5 +104,15 @@ function focusReleaseDate() {
     }
     else {
         checkname.innerHTML = "";
+        state++;
     }
+}
+
+function test(){
+    state = 0;
+    focusName();
+    focusGenre();
+    focusDuration();
+    focusReleaseDate();
+    console.log(state);
 }

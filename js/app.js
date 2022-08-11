@@ -1,20 +1,23 @@
 
 
-var api = 'https://localhost:5001/api/Movies'
+var api = 'https://localhost:5001/api/Movies/page'
 
 
-function start() {
-    getMovie(function(movies) {
-        console.log(movies);
+function start(i) {
+    getMovie(i,function(movies) {
         renderMovie(movies);
     });
 }
 
-start();
+function actionPage(i){
+    start(i);
+}
+
+start(1);
 
 // function
-function getMovie(callback) {
-    fetch(api)
+function getMovie(i,callback) {
+    fetch(api+'/'+i)
     .then(function(respone){
         return respone.json();
     })
@@ -34,7 +37,7 @@ function renderMovie(movies){
             </tr>
         `;
     });
-    listmovie.outerHTML = htmls.join('');
+    listmovie.innerHTML = htmls.join('');
 
     // Phân trang slipt htmls và custom state create in movie
 }
