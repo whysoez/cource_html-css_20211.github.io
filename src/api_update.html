@@ -13,18 +13,26 @@
         <div class="update">Sửa</div>
         <form>
             <label for="movieId">Movie Id:</label><br>
-            <input type="text" id="movieId" name="movieId" value=""><br><br>
+            <input type="text" onfocusout="focusId()" id="movieId" name="movieId" value=""><br><br>
+            <p id="checkid" class="check"></p>
             <label for="name">Movie Name:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
+            <input type="text" onfocusout="focusName()" id="name" name="name" value=""><br>
+            <p id="checkname" class="check"></p>
             <label for="genre">Genre:</label><br>
-            <input type="text" id="genre" name="genre" value=""><br><br>
+            <input type="text" onfocusout="focusGenre()" id="genre" name="genre" value=""><br><br>
+            <p id="checkgenre" class="check"></p>
             <label for="duration">Duration:</label><br>
-            <input type="text" id="duration" name="duration" value=""><br><br>
+            <input type="text" onfocusout="focusDuration()" id="duration" name="duration" value=""><br><br>
+            <p id="checkduration" class="check"></p>
             <label for="releaseDate">releaseDate:</label><br>
-            <input type="text" id="releaseDate" name="releaseDate" value=""><br><br>
-            <button id="update">Lưu thay đổi</button>
+            <input type="date" onfocusout="focusReleaseDate()" id="releaseDate" name="releaseDate" value=""><br><br>
+            <p id="checkreleasedate" class="check"></p>
         </form>
-        <a href="./testapi.html"><button>Back Index</button></a>
+        <div class="valid">
+            <button id="update" onclick="start()">Lưu thay đổi</button>
+            <a href="./testapi.html"><button>Back Index</button></a>
+            <p class="state"></p>
+        </div>
     </div>
     <script src="../js/update.js"></script>
 </body>
