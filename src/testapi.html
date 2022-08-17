@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/movie.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap1.6.1.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,15 +11,12 @@
     <h2>Get Movie from Database</h2>
     <div class="title">
         <table>
-            <tr>
-                <th>Id Movie</th>
-                <th>Name Movie</th>
-                <th>Genre Movie</th>
-                <th>Duration</th>
-                <th>releaseDate</th>
-            </tr>
+            <thead>
+                <tr id="head_list"></tr>
+            </thead>
+            <tbody id="list"></tbody>
         </table>
-        <table id="list"></table>
+        <!-- <table id="list"></table> -->
     </div>
     <a href="./api_create.html"><button>thêm</button></a>
     <a href="./api_delete.html"><button>xóa</button></a>

@@ -25,19 +25,49 @@ function getMovie(i,callback) {
 }
 
 function renderMovie(movies){
-    var listmovie =  document.querySelector('#list');
-    var htmls = movies.map(function(movie){
+    var headlist = document.querySelector('#head_list');
+    var movie0 = movies.headers;
+    console.log(movie0[0].propertyType);
+    var length = movie0.length;
+    var head = movie0.map(function(element){
         return `
-            <tr>
-                <td>${movie.movieId}</td>
-                <td>${movie.name}</td>
-                <td>${movie.genre}</td>
-                <td>${movie.duration}</td>
-                <td>${movie.releaseDate}</td>
-            </tr>
+        <th>${element.propertyValue}</th>
         `;
     });
+
+    headlist.innerHTML = head.join('');
+
+    if(movies == null)
+    return;
+
+    var movies2 = movies.movies;
+    var listmovie =  document.querySelector('#list');
+    htmls = movies2.map(function(movie) {
+        // console.log(movie);
+        var l = "";
+        for(var i=0; i< length; i++)
+        {
+            // var proName = convert(movie0[i].propertyName)
+            // console.log(nn)
+            l = l + '<td>' + movie[movie0[i].propertyName] + '</td>';
+            // var key = movie0[i].propertyName;
+
+            // console.log(l);
+        }
+        return '<tr>' + l +'</tr>';
+    });
+
     listmovie.innerHTML = htmls.join('');
 
     // Phân trang slipt htmls và custom state create in movie
 }
+
+// đã xử lý ở controller
+/* 
+function convert(a) {
+    var b = a.charAt(0).toLowerCase();
+    a = a.replace(a.charAt(0), b);
+    // console.log(a);
+    return a;
+}
+ */
